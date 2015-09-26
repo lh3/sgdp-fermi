@@ -68,10 +68,10 @@ fermi.kit/htsbox pileup -cuf hs37d5.fa *.srt.bam | bgzip > raw.vcf.gz
 fermi.kit/k8 fermi.kit/hapdip.js vcfsum -f raw.vcf.gz | bgzip > flt.vcf.gz
 ```
 The `pileup` command line does not apply any statistical modeling. It simply
-extracts differences from the reference genome and produces a multi-sample VCF.
-The filtering script marks variants with 1) <50% calling rate or 2) <10
-supporting reads in the sample with the highest allele depth. Post-filtered
-variants are then imported to BGT:
+extracts unitig-reference differences and produces a multi-sample VCF.  The
+filtering script marks variants with 1) <50% calling rate or 2) <10 supporting
+reads in the sample with the highest allele depth. Post-filtered variants are
+then imported to BGT:
 ```sh
 bgt import -S flt.vcf.gz 263.bgt
 ```
