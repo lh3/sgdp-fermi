@@ -5,7 +5,7 @@ This repository hosts the unphased [FermiKit][fermikit] variant calls for the
 describing the data set is under review. Users *shall* abidy by [Fort
 Lauderdale principles][policy] before the final publication of the manuscript.
 
-The data can be downloaded through the [release page][release] of this
+The data (946MB) can be downloaded through the [release page][release] of this
 repository, or via wget:
 ```
 wget https://github.com/lh3/sgdp-fermi/releases/download/v1/sgdp-hs37d5.tgz
