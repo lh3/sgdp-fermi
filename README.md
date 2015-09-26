@@ -44,7 +44,7 @@ bgt view -s'region=="EastAsian"&&gender=="M"' -f'AC>0'
 # coding variants
 bgt view -d vep-impact.fmf.gz -a'cdsPos>0' 263.bgt
 ```
-Please check out [BGT][bgt] for more advanced uses of bgt.
+Please check out the [BGT README][bgt] for more advanced uses of bgt.
 
 We are also releasing small variants called from human reference genome
 [GRCh38][grc], though this call set lacks universal masks and variant
@@ -67,11 +67,11 @@ samples together and filtered:
 fermi.kit/htsbox pileup -cuf hs37d5.fa *.srt.bam | bgzip > raw.vcf.gz
 fermi.kit/k8 fermi.kit/hapdip.js vcfsum -f raw.vcf.gz | bgzip > flt.vcf.gz
 ```
-The `pileup` command line simply produces a multi-sample VCF, but doesn't
-take advantage of aggregated information. The filtering script marks
-variants with 1) <50% calling rate or 2) <10 supporting reads in the
-sample with the highest allele depth. Post-filtered variants are then
-imported to BGT:
+The `pileup` command line does not apply any statistical modeling. It simply
+extracts differences from the reference genome and produces a multi-sample VCF.
+The filtering script marks variants with 1) <50% calling rate or 2) <10
+supporting reads in the sample with the highest allele depth. Post-filtered
+variants are then imported to BGT:
 ```sh
 bgt import -S flt.vcf.gz 263.bgt
 ```
