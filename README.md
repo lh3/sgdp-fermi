@@ -58,7 +58,7 @@ mapped with bwa-0.7.12 to reference genome hs37d5 and then sorted:
 fermi.kit/fermi2.pl unitig -t 8 -p utg -s 3g reads.fq.fz > utg.mak
 make -f utg.mak  # this takes a couple of wall-clock days
 fermi.kit/bwa mem -x intractg hs37d5.fa utg.mag.gz | gzip -1 > utg.sam.gz
-fermi.kit/htsbox samsort utg.sam.gz > utg.srt.bam
+fermi.kit/htsbox samsort -S utg.sam.gz > utg.srt.bam
 ```
 For 100bp reads, fermikit-0.8 should produce very similar results to the
 lastest fermikit-0.12.  After mapping, small variants are called from all
