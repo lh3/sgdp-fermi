@@ -1,4 +1,4 @@
-### Overview
+## Overview
 
 This repository hosts the unphased [FermiKit][fermikit] variant calls for the
 263 public [SGDP][sgdp] samples across 128 diverse populations. The manuscript
@@ -50,7 +50,7 @@ We are also releasing small variants called from human reference genome
 [GRCh38][grc], though this call set lacks universal masks and variant
 annotations.
 
-### Data Processing
+## Data Processing
 
 Each sample was independently *de novo* assembled with fermikit-0.8,
 mapped with bwa-0.7.12 to reference genome hs37d5 and then sorted:
@@ -82,7 +82,7 @@ by Ensembl [Variant Effect Predictor][vep], version 80:
                               --cache --everything --quiet
 ```
 
-### Additional Data Produced by FermiKit
+## Additional Data Produced by FermiKit
 
 Due to the space limit, we are only providing genotypes in highly compressed
 BGT files for download here. We also have multi-sample VCF with read depth
