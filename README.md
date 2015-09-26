@@ -55,7 +55,7 @@ annotations.
 Each sample was independently *de novo* assembled with fermikit-0.8,
 mapped with bwa-0.7.12 to reference genome hs37d5 and then sorted:
 ```sh
-fermi.kit/fermi2.pl unitig -t 8 -p utg -s 3g reads.fq.fz > utg.mak
+fermi.kit/fermi2.pl unitig -t 8 -p utg -s 3g "fermi.kit/trimadap reads.fq.fz" > utg.mak
 make -f utg.mak  # this takes a couple of wall-clock days
 fermi.kit/bwa mem -x intractg hs37d5.fa utg.mag.gz | gzip -1 > utg.sam.gz
 fermi.kit/htsbox samsort -S utg.sam.gz > utg.srt.bam
