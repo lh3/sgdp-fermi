@@ -87,8 +87,8 @@ by Ensembl [Variant Effect Predictor][vep], version 80:
 Due to the space limit, we are only providing genotypes in highly compressed
 BGT files for download here. We also have multi-sample VCF with read depth
 information (15GB compressed), FermiKit unitigs with read depth information
-(882GB) and the unitig FM-index for 232 with low-level microbiome sequences
-(38GB). Please contact us if you need these data.
+(882GB) and the unitig FM-index for 232 samples with low-level microbiome
+sequences (38GB). Please contact us if you need these data.
 
 [release]: https://github.com/lh3/sgdp-fermi/releases
 [fermikit]: https://github.com/lh3/fermikit
