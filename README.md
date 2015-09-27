@@ -8,7 +8,7 @@ Lauderdale principles][policy] before the final publication of the manuscript.
 The data (946MB) can be downloaded through the [release page][release] of this
 repository, or via wget:
 ```
-wget https://github.com/lh3/sgdp-fermi/releases/download/v1/sgdp-hs37d5.tgz
+wget https://github.com/lh3/sgdp-fermi/releases/download/v1/sgdp-263-hs37d5.tgz
 ```
 Unpacking the tar-ball creates the `sgdp-263-hs37d5` directory which consists
 of the following files:
