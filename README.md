@@ -16,7 +16,7 @@ of the following files:
 sgdp-263-hs37d5
 |-- 263.bgt.spl         # sample names and sample information (text)
 |-- 263.bgt.bcf         # site list (in BCFv2)
-|-- 263.bgt.pbf         # BGT genotypes (custom binary)
+|-- 263.bgt.pbf         # genotypes (BGT custom binary)
 |-- um75-hs37d5.bed.gz  # 75bp universal mask (regions to be filtered out)
 |-- um35-hs37d5.bed.gz  # 35bp universal mask
 |-- vep-impact.fmf.gz   # VEP annotations excluding MODIFER impact (gzip'd text)
@@ -40,7 +40,7 @@ bgt view -r 11:1,000,000-2,000,000 -s,S_French-1 -f'AC>0' 263.bgt
 # VCF for two samples
 bgt view -s,S_French-1,S_French-2 -f'AC>0' 263.bgt
 # VCF for East Asian males (see 263.bgt.spl for annotations)
-bgt view -s'region=="EastAsian"&&gender=="M"' -f'AC>0'
+bgt view -s'region=="EastAsia"&&gender=="M"' -f'AC>0' 263.bgt
 # coding variants
 bgt view -d vep-impact.fmf.gz -a'cdsPos>0' 263.bgt
 ```
