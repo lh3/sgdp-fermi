@@ -1,9 +1,11 @@
 ## Overview
 
 This repository hosts the unphased [FermiKit][fermikit] variant calls for the
-263 public [SGDP][sgdp] samples across 128 diverse populations. The manuscript
-describing the data set is under review. Users *shall* abidy by [Fort
-Lauderdale principles][policy] before the final publication of the manuscript.
+263 public [SGDP][sgdp] samples across 128 diverse populations. If you use
+these data, please cite the following [paper][sgdp-paper]:
+
+> Mallick et al (2016) The Simons Genome Diversity Project: 300 genomes from
+> 142 diverse populations, *Nature*.
 
 The data (946MB) can be downloaded through the [release page][release] of this
 repository, or via wget:
@@ -97,3 +99,4 @@ sequences (38GB). Please contact us if you need these data.
 [policy]: http://www.genome.gov/Pages/Research/WellcomeReport0303.pdf
 [grc]: http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/
 [vep]: http://www.ensembl.org/info/docs/tools/vep/index.html
+[sgdp-paper]: http://www.nature.com/nature/journal/vaop/ncurrent/full/nature18964.html
